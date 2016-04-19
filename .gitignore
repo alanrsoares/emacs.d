@@ -11,4 +11,4 @@ backups
 archive-contents
 .cask
 cider
-\.mc-lists.el
+\.mc-lists.elbackups
