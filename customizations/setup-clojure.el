@@ -47,7 +47,7 @@
 ;;;;
 
 ;; provides minibuffer documentation for the code you're typing into the repl
-(add-hook 'cider-mode-hook 'cider-turn-on-eldoc-mode)
+(add-hook 'cider-mode-hook 'eldoc-mode)
 
 ;; autocomplete
 (add-hook 'cider-repl-mode-hook #'company-mode)
@@ -124,4 +124,3 @@
 (defun clj-align-vectors (beg end)
   (interactive "r")
   (align-regexp beg end "^ \\[[^ ]+\\(\\s-+\\)" 1 1 t))
-
